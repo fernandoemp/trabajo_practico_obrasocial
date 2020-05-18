@@ -1,0 +1,100 @@
+<section class="row">
+    <div class="col-2">
+        <app-menu-aside></app-menu-aside>
+    </div>
+    <form id="formregistro" class="col-7 ml-5" name="formregistro" action="#" method="POST">
+        <div class="form-group row">
+            <strong class="col-12">
+            Registrate
+           </strong>
+            <p class="col-12">Completa los siguientes campos para empezar a afiliarte con nosotros!.<br/>Un asesor se contactará lo más antes posible para que puedan acordar el mejor plan para vos y tu familia!</p>
+        </div>
+        <div class="form-group row">
+            <strong class="col">
+            <b>Datos Personales</b>
+        </strong>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-4" for="nombre">Nombre Completo:</label>
+            <input class="form-control form-control-sm col-md-8" type="text" placeholder="Nombres y apellido" name="nombre" required pattern="[a-zA-Z- ]{10,}" />
+        </div>
+        <div class="form-group row">
+            <label class="col-md-4" for="direccion">Direccion:</label>
+            <input class="form-control form-control-sm col-md-8" type="text" placeholder="Domicio actual" name="direccion" required pattern="[a-zA-Z0-9- ]{5,}" />
+        </div>
+        <div class="form-group row">
+            <label class="col-md-4" for="codigopostal">Codigo Postal:</label>
+            <input class=" form-control form-control-sm col-md-8" type="tel" placeholder="ej:4612" name="codigopostal" required pattern="[0-9]{3,}" />
+        </div>
+        <div class="form-group row">
+            <label class="col-md-4" for="pais">Pais:</label>
+            <select required>
+                          <option selected value=""></option>
+                          <option value="Argentina">Argentina</option>
+                          <option value="Chile">Chile</option>
+                          <option value="Mexico">Mexico</option>
+                          <option value="Colombia">Colombia</option>
+                          <option value="EE.UU">EE.UU</option>
+                          <option value="Nicaragua">Nicaragua</option>
+                          <option value="Peru">Peru</option>
+                          <option value="Ecuador">Ecuador</option>
+                          <option value="Otro">Otro</option>
+            </select>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-4" for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" name="fechaNacimiento" min="1900-01-01" max="2100-12-31" required />
+        </div>
+
+        <div class="form-group row">
+            <label class="col-md-4" for="sexo">Sexo:</label>
+            <input class="sexo col-1" type="radio" name="sexo" value="Masculino">Masculino
+            <input class="sexo col-1" type="radio" name="sexo" value="Femenino">Femenino
+            <input class="sexo col-1" type="radio" name="sexo" value="Otro">Otro
+
+        </div>
+        <div class="form-group row">
+            <strong class="col-12">
+             <b>Datos de cuenta</b>
+          </strong>
+            <p class="col-12">Recordatio: por medio de el email y contraseña ingresado podrá ingresar a su nueva cuenta.<br> Ingrese un correo valido, le enviaremos un e-mail para confirmar su cuenta.</p>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-4" for="email">Email:</label>
+            <input class="form-control form-control-sm col-md-8" type="email" placeholder="ejemplo@gmail.com" name="email" required/>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-4" id="contraseña" for="contraseña">Contraseña:</label>
+            <input class="form-control form-control-sm col-md-8" type="password" placeholder="Combinacion de numeros y letras" name="contraseña" required pattern="[a-zA-Z0-9]{6,12}" />
+        </div>
+        <div class="form-group row">
+            <label class="col-md-4" id="contraseña2" for="contraseña2">Repita su Contraseña:</label>
+            <input class="form-control form-control-sm col-md-8" type="password" placeholder="Repita su nueva contraseña" name="contraseña2" required pattern="[a-zA-Z0-9]{6,12}" />
+        </div>
+        <div class="form-group row">
+            <strong class="col-12">
+            <b>Preferencia de contacto</b>
+        </strong>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-4" for="telefono">Telefono:</label>
+            <input class="col-5 col-sm-3 col-md-2" type="tel" placeholder="Cod. Area" name="telefono" required pattern="[0-9]{2,5}" />
+            <input class="form-control form-control-sm  col-7 col-sm-9 col-md-6" id="telefono" type="tel" placeholder="Telefono o celular" name="telefono" required pattern="[0-9]{6,12}" />
+        </div>
+        <div class="form-group row">
+            <label class="col-md-4" for="horariocontacto">Elija en qué momento del dia podemos contactarlo:</label>
+            <div class="col pl-0" id="horariocontacto">
+                <input type="checkbox" name="mañana" value="Mañana"> Mañana <br>
+                <input type="checkbox" name="tarde" value="Tarde"> Tarde <br>
+                <input type="checkbox" name="noche" value="Noche"> Noche <br>
+            </div>
+        </div>
+        <div class="form-group row justify-content-center">
+            <input class="btn btn-dark" type="submit" value="Enviar" />
+            <input class="btn btn-dark" type="reset" value="Cancelar" />
+        </div>
+        <div class="form-group row">
+            <footer class="text-dark col-12 text-center"><small>Al hacer clic en "Enviar" acepta nuestros <a href="#"> <strong>terminos y condiciones.</strong></a></small> </footer>
+        </div>
+    </form>
+</section>

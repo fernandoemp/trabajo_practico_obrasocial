@@ -1,0 +1,15 @@
+<div class="row justify-content-center">
+    <app-menu-aside class="d-none d-md-block d-sm-3"></app-menu-aside>
+    <div class="col-11 col-md-9">
+        <ngb-carousel *ngIf="imagenesGaleria" class="carousel-galeria mb-4">
+            <ng-template ngbSlide *ngFor="let image of imagenesGaleria">
+                <div class="picsum-img-wrapper">
+                    <img [src]="image.urlImagen" class="img-fluid w-100 h-25" alt="Random slide">
+                </div>
+            </ng-template>
+        </ngb-carousel>
+    </div>
+</div>
+<div class="row">
+    <app-menu-aside class="col-3 d-md-none"></app-menu-aside>
+</div>

@@ -1,0 +1,15 @@
+.menu-aside li {
+    border-bottom: 1px dotted rgba(134, 126, 126, 0.678);
+}
+
+.menu-aside a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+
+.menu-aside li:hover {
+    transform: scaleX(0.9) scaleY(0.9) scaleZ(0.9);
+    -moz-transform: scaleX(0.9) scaleY(0.9) scaleZ(0.9);
+    -webkit-transform: scaleX(0.9) scaleY(0.9) scaleZ(0.9);
+}

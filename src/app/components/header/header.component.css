@@ -1,0 +1,29 @@
+.navegador {
+    background-color: rgb(214, 214, 214);
+}
+
+.navegador ul {
+    border-top: 7px solid black;
+}
+
+.navegador li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.navegador li :hover {
+    background-color: black;
+    color: white;
+    -moz-border-radius: 0px 5px 5px 5px;
+    -webkit-border-radius: 0px 5px 5px 5px;
+    border-radius: 0px 5px 5px 5px;
+}
+
+.ruta-activa {
+    background-color: black;
+    color: white !important;
+    -moz-border-radius: 0px 5px 5px 5px;
+    -webkit-border-radius: 0px 5px 5px 5px;
+    border-radius: 0px 5px 5px 5px;
+}

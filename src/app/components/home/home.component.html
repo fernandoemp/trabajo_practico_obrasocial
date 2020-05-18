@@ -1,0 +1,126 @@
+<div class="row justify-content-center">
+    <div class="col-11 col-md-9 align-items-center">
+        <ngb-carousel *ngIf="imagenesHome" class="carousel-home mb-4">
+            <ng-template ngbSlide *ngFor="let image of imagenesHome">
+                <div class="picsum-img-wrapper">
+                    <img [src]="image.urlImagen" class="img-fluid w-100 h-25" alt="Random slide">
+                </div>
+            </ng-template>
+        </ngb-carousel>
+    </div>
+</div>
+<div class="row">
+    <div class="col-4 col-md-3 ml-2">
+
+        <app-menu-aside class="mt-4"></app-menu-aside>
+
+        <section class="d-none d-sm-block col-sm-12 prestaciones mt-4">
+            <h4 class="mb-0">Nuevas Prestaciones</h4>
+            <article class="card border-0 card-prestaciones col pl-0 mb-0 pt-0">
+                <div class="card-body">
+                    <a href="#" class="stretched-link">
+                        <h5 class="card-title">Cobertura para diabetes</h5>
+                    </a>
+                    <p class="card-text">100% cobertura en insulinas</p>
+                </div>
+            </article>
+            <article class="card border-0 card-prestaciones col pl-0 mb-0 pt-0">
+                <div class="card-body">
+                    <a href="#" class="stretched-link">
+                        <h5 class="card-title">Prótesis y Ortesis</h5>
+                    </a>
+                    <p class="card-text">Cobertura del 60% en Protesis y Ortesis</p>
+                </div>
+            </article>
+            <article class="card border-0 card-prestaciones col pl-0 mb-0 pt-0">
+                <div class="card-body">
+                    <a href="#" class="stretched-link">
+                        <h5 class="card-title">Plan Materno Infantil</h5>
+                    </a>
+                    <p class="card-text">Atencion integral de la embarazada y del niño hasta el año de edad con cobertura 100%</p>
+                </div>
+            </article>
+            <article class="card border-0 card-prestaciones col pl-0 mb-0 pt-0">
+                <div class="card-body">
+                    <a href="#" class="stretched-link">
+                        <h5 class="card-title">Medicamentos Inmunosupresores</h5>
+                    </a>
+                    <p class="card-text"> Cobertura del 100% con prescripción de médico de cartilla</p>
+                </div>
+            </article>
+        </section>
+    </div>
+
+    <main class="principal col-7 col-md-8">
+        <div class="card  border-0 card-beneficios">
+            <h2 class="card-title">EMER-GEN Obra Social Lider en el cuidado de TU SALUD</h2>
+            <div class="card-body">
+                <div class="row">
+                    <img class="card-img-left img-fluid col-8 col-md-5 img-thumbnail" src="./../../../assets/images/home/familia.jpg" alt="img-familia">
+                    <p class="col-12 col-md-7">
+                        <strong>En EMER-GEN, lo mas imporante sos vos y tu familia.</strong> Por ese motivo disponemos de distintos planes acorde a cada persona. <em>Conocé <a href="https://www.google.com" target="_blank ">Nuestros Planes!</a></em><br>Desde
+                        1986 acompañandote en los buenos y malos momentos, brindandote dia a dia lo mejor.
+                        <em>EMER-GEN siempre a tu lado.</em>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <section class="row beneficios">
+            <article class="card w-50 border-0 card-beneficios col-12 col-lg-6">
+                <div class="card-body">
+                    <div class="row">
+                        <img class="card-img-left img-fluid col-5 col-sm-3 ml-3 mb-2 rounded-circle ml-md-0" src="./../../../assets/images/home/beneficios/hospital.png" alt="Card image cap">
+                        <p class="card-title col-12 col-sm-7">Cobertura en mas de 250 hospitales y clinicas en todo el pais</p>
+                    </div>
+                    <a class="btn-conocermas px-1" href="# ">Conocer Más</a>
+                </div>
+            </article>
+            <article class="card w-50 border-0 card-beneficios col-12 col-lg-6">
+                <div class="card-body">
+                    <div class="row">
+                        <img class="card-img-left img-fluid col-5 col-sm-3 ml-3 mb-2 rounded-circle ml-md-0" src="./../../../assets/images/home/beneficios/medicamento.png" alt="Card image cap">
+                        <p class="card-title col-12 col-sm-7 ">Importantes descuentos en medicamentos</p>
+                    </div>
+                    <a class="btn-conocermas px-1" href="# ">Conocer Más</a>
+                </div>
+            </article>
+            <article class="card w-50 border-0 card-beneficios col-12 col-lg-6">
+                <div class="card-body">
+                    <div class="row">
+                        <img class="card-img-left img-fluid col-5 col-sm-3 ml-3 mb-2 rounded-circle ml-md-0" src="./../../../assets/images/home/beneficios/bebe.png" alt="Card image cap">
+                        <p class="card-title col-12 col-sm-7">Cuidando de tu familia desde el primer momento</p>
+                    </div>
+                    <a class="btn-conocermas px-1" href="# ">Conocer Más</a>
+                </div>
+            </article>
+            <article class="card w-50 border-0 card-beneficios col-12 col-lg-6">
+                <div class="card-body">
+                    <div class="row">
+                        <img class="card-img-left img-fluid col-5 col-sm-3 ml-3 mb-2 rounded-circle ml-md-0" src="./../../../assets/images/home/beneficios/autogestion.png" alt="Card image cap">
+                        <p class="card-title col-12 col-sm-7">Realiza tramites sin moverte de tu casa desde nuesta aplicacion</p>
+                    </div>
+                    <a class="btn-conocermas px-1" href="#">Conocer Más</a>
+                </div>
+            </article>
+            <article class="card w-50 border-0 card-beneficios col-12 col-lg-6">
+                <div class="card-body">
+                    <div class="row">
+                        <img class="card-img-left img-fluid col-5 col-sm-3 ml-3 mb-2 rounded-circle ml-md-0" src="./../../../assets/images/home/beneficios/cuidados.png" alt="Card image cap">
+                        <p class="card-title col-12 col-sm-7">Presente en cada circunstancia que se presente</p>
+                    </div>
+                    <a class="btn-conocermas px-1" href="#">Conocer Más</a>
+                </div>
+            </article>
+            <article class="card w-50 border-0 card-beneficios col-12 col-lg-6">
+                <div class="card-body">
+                    <div class="row">
+                        <img class="card-img-left img-fluid col-5 col-sm-3 ml-3 mb-2 rounded-circle ml-md-0" src="./../../../assets/images/home/beneficios/estudios.png" alt="Card image cap">
+                        <p class="card-title col-12 col-sm-7">Estudios clinicos totalmente cubiertos</p>
+                    </div>
+                    <a class="btn-conocermas px-1" href="#">Conocer Más</a>
+                </div>
+            </article>
+        </section>
+
+    </main>
+</div>

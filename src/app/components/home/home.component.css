@@ -1,0 +1,26 @@
+.carousel-home {
+    text-align: center;
+    overflow: hidden;
+    border: 10px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, .5);
+    outline: 1px solid #d6d6d6;
+    margin-bottom: 70px;
+}
+
+.btn-conocermas {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    background-image: url(../../../assets/images/home/boton.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-beneficios {
+    background-color: rgb(243, 243, 243);
+}
+
+.card-prestaciones {
+    background-color: rgb(243, 243, 243);
+    border-bottom: 1px dotted rgba(188, 198, 202, 0.89) !important;
+}
