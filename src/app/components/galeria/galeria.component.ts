@@ -8,11 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class GaleriaComponent implements OnInit {
 
   imagenesGaleria = [
-    { urlImagen: './../../../assets/images/home/carousel/slider6.png' },
-    { urlImagen: './../../../assets/images/home/carousel/slider7.png' },
-    { urlImagen: './../../../assets/images/home/carousel/slider8.png' },
-    { urlImagen: './../../../assets/images/home/carousel/slider9.png' },
-    { urlImagen: './../../../assets/images/home/carousel/slider10.jpg' }
+    { urlImagen: '/assets/images/galeria/slider7.png' },
+    { urlImagen: '/assets/images/galeria/slider8.png' },
+    { urlImagen: '/assets/images/galeria/slider9.png' },
+    { urlImagen: '/assets/images/galeria/slider10.jpg' }
   ];
 
   constructor() { }

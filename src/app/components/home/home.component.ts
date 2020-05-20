@@ -11,12 +11,12 @@ import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
 export class HomeComponent implements OnInit {
 
   imagenesHome = [
-    { urlImagen: './../../../assets/images/home/carousel/slider1.png' },
-    { urlImagen: './../../../assets/images/home/carousel/slider2.jpg' },
-    { urlImagen: './../../../assets/images/home/carousel/slider3.jpg' },
-    { urlImagen: './../../../assets/images/home/carousel/slider4.jpg' },
-    { urlImagen: './../../../assets/images/home/carousel/slider5.jpg' },
-    { urlImagen: './../../../assets/images/home/carousel/slider6.jpg' }
+    { urlImagen: '/assets/images/home/carousel/slider1.png' },
+    { urlImagen: '/assets/images/home/carousel/slider2.jpg' },
+    { urlImagen: '/assets/images/home/carousel/slider3.jpg' },
+    { urlImagen: '/assets/images/home/carousel/slider4.jpg' },
+    { urlImagen: '/assets/images/home/carousel/slider5.jpg' },
+    { urlImagen: '/assets/images/home/carousel/slider6.jpg' }
   ];
 
 
